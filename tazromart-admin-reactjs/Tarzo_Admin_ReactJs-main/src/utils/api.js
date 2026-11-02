@@ -3,7 +3,7 @@ import axios from 'axios';
 // ⚙️ Same backend, just consumed from the browser instead of the RN app.
 // Point this at your existing API base URL (env var keeps it deploy-friendly).
 // Vite exposes env vars via `import.meta.env.VITE_*` in the browser.
-const BASE_URL = import.meta.env.VITE_API_URL || 'https://tazromartbackendapifiles-production.up.railway.app/api';
+const BASE_URL = import.meta.env.VITE_API_URL || 'https://tazromartbackendapifiles-production.up.railway.app/api/admin';
 
 export const adminApi = axios.create({
   baseURL: BASE_URL,
